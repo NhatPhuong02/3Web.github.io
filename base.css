@@ -20,7 +20,7 @@ html {
 .grid {
     width: 1200px;
     max-width: 100%;
-    /*khi mà hình bé hơn 1200px thì nó sẽ chạy 100%*/
+    /*khi mà màn hình bé hơn 1200px thì nó sẽ chạy 100%*/
     margin: 0 auto;
 }
 
