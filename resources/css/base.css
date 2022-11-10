@@ -1,44 +1,27 @@
 :root {
-    --white-color: #f6f6f2;
-    --black-color: #000;
-    --green-color: #388078;
-    --text-color: #333;
+  --white-color: #f6f6f2;
+  --black-color: #000;
+  --text-color: #333;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 html {
-<<<<<<< HEAD
-    /* 16px */
-    font-size: 62.5%;
-    line-height: 1.6rem;
-    font-family: 'Jolly Lodger', cursive;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    background-color: var(--white-color);
-}
-
-.navbar_grid {
-    width: 1200px;
-    max-width: 100%;
-    /*khi mà màn hình bé hơn 1200px thì nó sẽ chạy 100%*/
-    margin: 0 auto;
-=======
   /* 16px */
   font-size: 62.5%;
   line-height: 1rem;
   font-family: 'Jolly Lodger', cursive;
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
-  background-color: var(--white-color);
+  background-color: #f6f6f2;
 }
 
 .navbar_grid {
@@ -47,20 +30,13 @@ html {
   height: 7rem;
   /*khi mà màn hình bé hơn 1200px thì nó sẽ chạy 100%*/
   margin: 0 auto;
->>>>>>> 250d484a055f696b2dc2eb2a1488058da95a1e3d
 }
 
 .grid__full-width {
-    width: 100%;
+  width: 100%;
 }
 
 .grid__row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.container {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
