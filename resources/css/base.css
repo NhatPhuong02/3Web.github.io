@@ -16,6 +16,7 @@ li {
 }
 
 html {
+<<<<<<< HEAD
     /* 16px */
     font-size: 62.5%;
     line-height: 1.6rem;
@@ -30,6 +31,23 @@ html {
     max-width: 100%;
     /*khi mà màn hình bé hơn 1200px thì nó sẽ chạy 100%*/
     margin: 0 auto;
+=======
+  /* 16px */
+  font-size: 62.5%;
+  line-height: 1rem;
+  font-family: 'Jolly Lodger', cursive;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  background-color: var(--white-color);
+}
+
+.navbar_grid {
+  width: 1200px;
+  max-width: 100%;
+  height: 7rem;
+  /*khi mà màn hình bé hơn 1200px thì nó sẽ chạy 100%*/
+  margin: 0 auto;
+>>>>>>> 250d484a055f696b2dc2eb2a1488058da95a1e3d
 }
 
 .grid__full-width {
