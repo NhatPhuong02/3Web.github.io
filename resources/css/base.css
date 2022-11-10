@@ -1,41 +1,41 @@
 :root {
-    --white-color: #F6F6F2;
-    --black-color: #000;
-    --text-color: #333;
+  --white-color: #f6f6f2;
+  --black-color: #000;
+  --text-color: #333;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 html {
-    /* 16px */
-    font-size: 62.5%;
-    line-height: 1.6rem;
-    font-family: 'Jolly Lodger', cursive;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    background-color: var(--white-color);
+  /* 16px */
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: 'Jolly Lodger', cursive;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  background-color: var(--white-color);
 }
 
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    /*khi mà màn hình bé hơn 1200px thì nó sẽ chạy 100%*/
-    margin: 0 auto;
+.navbar_grid {
+  width: 1200px;
+  max-width: 100%;
+  /*khi mà màn hình bé hơn 1200px thì nó sẽ chạy 100%*/
+  margin: 0 auto;
 }
 
 .grid__full-width {
-    width: 100%;
+  width: 100%;
 }
 
 .grid__row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
