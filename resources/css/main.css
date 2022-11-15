@@ -1,11 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-li {
-    list-style: none;
+:root {
+    --white-color: #f6f6f2;
+    --black-color: #000;
+    --text-color: #333;
 }
 
 h1 {
@@ -94,4 +90,42 @@ a.nav-link {
 .pic_wrapper {
     width: 100%;
     margin: 0 auto;
+}
+
+
+/* section */
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.elip_bottom,
+.rectangle,
+.elip_top {
+    width: 100%;
+}
+
+.shape_rectangle {
+    background: linear-gradient(108.89deg, #BADFE7 34.31%, #C2EDCE 86.34%);
+    padding: 200px 0;
+}
+
+.elip_top,
+.elip_bottom {
+    width: 150%;
+    padding: 200px 0;
+    position: relative;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    left: -25%
+}
+
+.elip_bottom {
+    bottom: 10rem;
+}
+
+.elip_top {
+    top: 10rem;
 }
