@@ -263,3 +263,39 @@ a.nav-link {
     font-size: 5rem;
     text-decoration: underline var(--text-color-main) solid;
 }
+
+.grid_Item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item_Slot {
+    display: flex;
+}
+
+.image_Item {
+    width: 150px;
+    height: 100px;
+    background-image: url(/resources/img/sanpham.png);
+    background-color: var(--white-color);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/* Product */
+
+.container_Product {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content_Product {
+    color: var(--text-color-main);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    text-decoration: underline var(--text-color-main) solid;
+}
