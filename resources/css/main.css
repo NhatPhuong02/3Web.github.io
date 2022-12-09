@@ -20,8 +20,8 @@ nav {
 .header {
     border-bottom: 2px solid #12bcc2;
     position: fixed;
-    left: 0;
-    right: 0;
+    top: 0;
+    width: 100%;
 }
 
 
@@ -281,6 +281,11 @@ a.nav-link {
     background-color: var(--white-color);
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+.item_Slot {
+    margin-top: 10px;
+    border: 10px;
 }
 
 
