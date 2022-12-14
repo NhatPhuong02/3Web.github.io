@@ -91,15 +91,21 @@ a.nav-link {
 }
 
 .pic_wrapper {
-    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 160px;
     text-align: center;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    /* height: 25%; */
 }
 
-.pic_oval {
-    padding-top: 20rem;
+.oval_pic {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/oval.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 180px;
 }
 
 
