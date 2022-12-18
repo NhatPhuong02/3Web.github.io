@@ -16,7 +16,7 @@ nav {
     display: flex;
     justify-content: space-between;
     /* 1. them cai color cho khoi bi de, mac dinh object se transparent (xuyen thau) */
-    background-color: black; 
+    background-color: var(--white-color)
 }
 
 .header {
@@ -87,47 +87,44 @@ a.nav-link {
 
 /* Home */
 
+.container_Home {
+    width: 100%;
+    height: 90%;
+    position: relative;
+}
+
 .oval_pic {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 86vh;
     position: relative;
-    top: 4vh;
+    top: 18vh;
     background-image: url(../img/oval.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 .pic_wrapper {
-    /* 3 .chinh so so vi tri */
-	width: 78vw;
-	height: 100vh;
-	top: 17vh;
-	background-image: url(../img/yo.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	position: absolute;
-	/* padding: 35%; */
-	/* padding-top: 122%;
-	padding-bottom: 37%; */
-	max-width: 408px;
+    width: 78vw;
+    height: 70vh;
+    top: -1vh;
+    background-image: url(../img/yo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    max-width: 408px;
 }
+
 
 /* ------------------------------ */
 
 
 /* Blog */
-.container_Home {
-    width: 100%;
-    /* height: 90%; */
-    position: relative;
-}
 
 .container_Blog {
     width: 100%;
-    margin: 0 auto;
-    padding: 79px;
-    line-height: 1.6;
+    height: 100%;
+    position: relative;
 }
 
 .content_Blog {
@@ -139,6 +136,10 @@ a.nav-link {
     text-decoration: underline var(--text-color-main) solid;
     position: relative;
     height: 100px;
+}
+
+.item_Blog {
+    margin-bottom: 60px;
 }
 
 .grid_Item {
@@ -165,13 +166,16 @@ a.nav-link {
     border: 10px;
 }
 
+
 /* cai nay sua tam */
+
 .item_Slot h2 {
-	border: 10px;
-	position: relative;
-	top: 15px;
-	left: 10px;
+    border: 10px;
+    position: relative;
+    top: 15px;
+    left: 10px;
 }
+
 
 /* Product */
 
