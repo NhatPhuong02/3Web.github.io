@@ -58,7 +58,6 @@ nav {
 
 .content_nav {
     font-family: 'Roboto', sans-serif;
-    color: #12bcc2;
     padding: 1rem 0;
 }
 
@@ -69,6 +68,7 @@ nav {
 .content_nav ul li {
     padding: 4px 3rem;
     font-size: 1.6rem;
+    color: #12bcc2;
 }
 
 .content_nav ul li:hover {
@@ -79,6 +79,8 @@ nav {
 
 a.nav-link {
     font-size: 2rem;
+    text-decoration: none;
+    color: inherit;
 }
 
 
