@@ -129,6 +129,7 @@ a.nav-link {
     position: relative;
     /* background-color: var(--text-color-main); */
     background-image: linear-gradient(-90deg, rgb(182, 239, 203, 1), rgb(176, 224, 232, 1));
+    border-radius: 20px;
 }
 
 .content_Blog {
@@ -198,4 +199,41 @@ a.nav-link {
     justify-content: center;
     font-size: 5rem;
     text-decoration: underline var(--text-color-main) solid;
+}
+
+.product_slot {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.slot {
+    padding: 5rem;
+    text-align: center;
+    /* border: 0.8rem solid rgb(182, 239, 203, 1); */
+    background-color: var(--white-color);
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 20px;
+    background-clip: padding-box;
+}
+
+.slot::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    margin: -5px;
+    background-image: linear-gradient(-90deg, rgb(182, 239, 203, 1), rgb(176, 224, 232, 1));
+    border-radius: inherit;
+}
+
+.slot>img {
+    height: 10rem;
+}
+
+.slot>h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
 }
