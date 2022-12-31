@@ -20,10 +20,13 @@ nav {
 }
 
 .header {
-    border-bottom: 2px solid #12bcc2;
+    border-bottom: 3px solid;
     position: fixed;
     top: 0;
     width: 100%;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(-90deg, rgb(182, 239, 203, 1), rgb(176, 224, 232, 1));
+    background-color: var(--white-color);
 }
 
 
@@ -230,10 +233,79 @@ a.nav-link {
 }
 
 .slot>img {
-    height: 10rem;
+    height: 200px;
+    /* border-color: red; */
+    border: 1px solid white;
+    border-radius: 10px
 }
 
 .slot>h3 {
     font-size: 2rem;
     padding: 1rem 0;
+}
+
+.content_Contact {
+    color: var(--text-color-main);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    text-decoration: underline var(--text-color-main) solid;
+    position: relative;
+    height: 100px;
+    align-items: center;
+}
+
+.contactItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 2rem;
+}
+
+.box {
+    width: 48%;
+    background-color: var(--white-color);
+    height: auto;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit] :hover {
+    background-color: black;
+}
+
+label {
+    font-size: 1.6rem
 }
