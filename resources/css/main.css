@@ -74,17 +74,17 @@ nav {
     color: #12bcc2;
 }
 
-.content_nav ul li:hover {
-    background-color: #12bcc2;
-    color: #f6f6f2;
-    border-radius: 5px;
-}
-
 a.nav-link {
     padding: 4px 3rem;
     font-size: 2rem;
     text-decoration: none;
     color: inherit;
+}
+
+a.nav-link:hover {
+    background-color: #12bcc2;
+    color: #f6f6f2;
+    border-radius: 5px;
 }
 
 
@@ -245,6 +245,9 @@ a.nav-link {
     padding: 1rem 0;
 }
 
+
+/* Contact */
+
 .content_Contact {
     color: var(--text-color-main);
     margin: 0 auto;
@@ -295,7 +298,7 @@ textarea {
 }
 
 input[type=submit] {
-    background-color: #04AA6D;
+    background-color: var(--text-color-main);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -309,4 +312,45 @@ input[type=submit] :hover {
 
 label {
     font-size: 1.6rem
+}
+
+
+/* Footer */
+
+footer {
+    background-color: var(--text-color-main);
+}
+
+.footer-nav {
+    background-color: var(--text-color-main);
+}
+
+.copy_writer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy_writer_item {
+    display: flex;
+    margin: 0.4rem;
+    font-size: 1rem;
+    color: var(--white-color);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.itemfooter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemfooter_slot {
+    padding: 1rem;
+    font-size: 3rem;
+    border-radius: 15px;
+}
+
+.itemfooter_slot:hover {
+    color: var(--text-color-main);
+    background-color: var(--white-color);
 }
