@@ -1,367 +1,361 @@
-:root {
-    --white-color: #f6f6f2;
-    --black-color: #000;
-    --text-color: #333;
-    --text-color-main: #12bcc2;
-}
-
-h1 {
-    font-size: 4 rem;
-}
-
-nav {
-    padding: 15px;
-    width: 100%;
-    height: 7rem;
-    display: flex;
-    justify-content: space-between;
-    /* 1. them cai color cho khoi bi de, mac dinh object se transparent (xuyen thau) */
-    background-color: var(--white-color)
-}
-
-.header {
-    border-bottom: 3px solid;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(-90deg, rgb(182, 239, 203, 1), rgb(176, 224, 232, 1));
-    background-color: var(--white-color);
-    z-index: 1;
-}
-
-
-/* logo nav */
-
-.text_logo {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: #ffffff;
-    border: black;
-    padding: 1rem 0;
-    font-size: 5rem;
-}
-
-.text_logo,
-.D {
-    font-family: 'Jolly Lodger';
-    -webkit-text-stroke: 1px black;
-}
-
-.logo {
-    display: flex;
-    flex-direction: row;
-}
-
-.img-nav {
-    width: 155px;
-    height: 105px;
-}
-
-
-/* item nav */
-
-.content_nav {
-    font-family: 'Roboto', sans-serif;
-    padding: 1rem 0;
-}
-
-.content_nav ul {
-    display: flex;
-}
-
-.content_nav ul li {
-    font-size: 1.6rem;
-    color: #12bcc2;
-}
-
-a.nav-link {
-    padding: 4px 3rem;
-    font-size: 2rem;
-    text-decoration: none;
-    color: inherit;
-}
-
-a.nav-link:hover {
-    background-color: #12bcc2;
-    color: #f6f6f2;
-    border-radius: 5px;
-}
-
-
-/* ------------------------------ */
-
-
-/* Home */
-
-.container_Home {
-    width: 100%;
-    height: 90%;
-    position: relative;
-}
-
-.oval_pic {
-    display: flex;
-    justify-content: center;
-    height: 86vh;
-    position: relative;
-    top: 18vh;
-    background-image: url(../img/oval.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-.pic_wrapper {
-    width: 78vw;
-    height: 70vh;
-    top: -1vh;
-    background-image: url(../img/yo.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position: absolute;
-    max-width: 408px;
-}
-
-
-/* ------------------------------ */
-
-
-/* Blog */
-
-.container_Blog {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-image: linear-gradient(-90deg, rgb(182, 239, 203, 1), rgb(176, 224, 232, 1));
-    border-radius: 20px;
-}
-
-.content_Blog {
-    color: var(--white-color);
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    font-size: 5rem;
-    text-decoration: underline var(--white-color) solid;
-    position: relative;
-    height: 100px;
-    align-items: center;
-}
-
-.item_Blog {
-    padding-bottom: 54px;
-    margin-bottom: 60px;
-}
-
-.grid_Item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.item_Slot {
-    display: flex;
-    background-color: var(--white-color);
-    margin-top: 10px;
-    border: 10px;
-    border-radius: 10px;
-    width: 50%;
-}
-
-.image_Item {
-    width: 150px;
-    height: 100px;
-    background-image: url(/resources/img/sanpham.png);
-    background-color: var(--white-color);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    border-radius: 10px 0% 0% 10px
-}
-
-
-/* cai nay sua tam */
-
-.item_Slot h2 {
-    border: 10px;
-    position: relative;
-    top: 15px;
-    left: 10px;
-}
-
-
-/* Product */
-
-.container_Product {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.content_Product {
-    color: var(--text-color-main);
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    font-size: 5rem;
-    text-decoration: underline var(--text-color-main) solid;
-}
-
-.product_slot {
-    margin-top: 5rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1.5rem;
-}
-
-.slot {
-    padding: 5rem;
-    text-align: center;
-    /* border: 0.8rem solid rgb(182, 239, 203, 1); */
-    background-color: var(--white-color);
-    box-sizing: border-box;
-    position: relative;
-    border-radius: 20px;
-    background-clip: padding-box;
-}
-
-.slot::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    margin: -5px;
-    background-image: linear-gradient(-90deg, rgb(182, 239, 203, 1), rgb(176, 224, 232, 1));
-    border-radius: inherit;
-}
-
-.slot>img {
-    height: 200px;
-    /* border-color: red; */
-    border: 1px solid white;
-    border-radius: 10px
-}
-
-.slot>h3 {
-    font-size: 2rem;
-    padding: 1rem 0;
-}
-
-.price {
-    font-size: 1.4rem;
-    margin: 0.5rem 0;
-}
-
-
-/* Contact */
-
-.content_Contact {
-    color: var(--text-color-main);
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    font-size: 5rem;
-    text-decoration: underline var(--text-color-main) solid;
-    position: relative;
-    height: 100px;
-    align-items: center;
-}
-
-.contactItem {
-    display: flex;
-    justify-content: space-between;
-}
-
-h2 {
-    text-align: center;
-    margin: 10px 0;
-    font-size: 2rem;
-}
-
-.box {
-    width: 48%;
-    background-color: var(--white-color);
-    height: auto;
-}
-
-input[type=text],
-select,
-textarea {
-    width: 100%;
-    /* Full width */
-    padding: 12px;
-    /* Some padding */
-    border: 1px solid #ccc;
-    /* Gray border */
-    border-radius: 4px;
-    /* Rounded borders */
-    box-sizing: border-box;
-    /* Make sure that padding and width stays in place */
-    margin-top: 6px;
-    /* Add a top margin */
-    margin-bottom: 16px;
-    /* Bottom margin */
-    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-input[type=submit] {
-    background-color: var(--text-color-main);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit] :hover {
-    background-color: black;
-}
-
-label {
-    font-size: 1.6rem
-}
-
-
-/* Footer */
-
-footer {
-    background-color: var(--text-color-main);
-}
-
-.footer-nav {
-    background-color: var(--text-color-main);
-}
-
-.copy_writer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.copy_writer_item {
-    display: flex;
-    margin: 0.4rem;
-    font-size: 1rem;
-    color: var(--white-color);
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.itemfooter {
-    display: flex;
-    justify-content: space-between;
-}
-
-.itemfooter_slot {
-    padding: 1rem;
-    font-size: 3rem;
-    border-radius: 15px;
-}
-
-.itemfooter_slot:hover {
-    color: var(--text-color-main);
-    background-color: var(--white-color);
-}
-
-.container_Blog,
-.container_Contact,
-.container_Home,
-.container_Product {
-    padding: 0 0.5rem;
-}
+            :root {
+               --white-color: #f6f6f2;
+               --black-color: #000;
+               --text-color: #333;
+               --text-color-main: #12bcc2;
+           }
+           
+           h1 {
+               font-size: 4 rem;
+           }
+           
+           nav {
+               padding: 15px;
+               width: 100%;
+               height: 7rem;
+               display: flex;
+               justify-content: space-between;
+               /* 1. them cai color cho khoi bi de, mac dinh object se transparent (xuyen thau) */
+               background-color: var(--white-color)
+           }
+           
+           .header {
+               border-bottom: 3px solid;
+               position: fixed;
+               top: 0;
+               width: 100%;
+               border-image-slice: 1;
+               border-image-source: linear-gradient(-90deg, rgb(182, 239, 203, 1), rgb(176, 224, 232, 1));
+               background-color: var(--white-color);
+               z-index: 1;
+           }
+           /* logo nav */
+           
+           .text_logo {
+               text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+               color: #ffffff;
+               border: black;
+               padding: 1rem 0;
+               font-size: 5rem;
+           }
+           
+           .text_logo,
+           .D {
+               font-family: 'Jolly Lodger';
+               -webkit-text-stroke: 1px black;
+           }
+           
+           .logo {
+               display: flex;
+               flex-direction: row;
+           }
+           
+           .img-nav {
+               width: 155px;
+               height: 105px;
+           }
+           /* item nav */
+           
+           .content_nav {
+               font-family: 'Roboto', sans-serif;
+               padding: 1rem 0;
+           }
+           
+           .content_nav ul {
+               display: flex;
+           }
+           
+           .content_nav ul li {
+               font-size: 1.6rem;
+               color: #12bcc2;
+           }
+           
+           a.nav-link {
+               padding: 4px 3rem;
+               font-size: 2rem;
+               text-decoration: none;
+               color: inherit;
+           }
+           
+           a.nav-link:hover {
+               background-color: #12bcc2;
+               color: #f6f6f2;
+               border-radius: 5px;
+           }
+           
+           #nav-menu {
+               display: none;
+           }
+           
+           @media screen and (max-width: 850px) {
+               #nav-menu {
+                   display: block;
+               }
+               .nav-item {
+                   display: none;
+               }
+           }
+           /* ------------------------------ */
+           /* Home */
+           
+           .container_Home {
+               width: 100%;
+               height: 90%;
+               position: relative;
+           }
+           
+           .oval_pic {
+               display: flex;
+               justify-content: center;
+               height: 86vh;
+               position: relative;
+               top: 18vh;
+               background-image: url(../img/oval.png);
+               background-size: 100% 100%;
+               background-repeat: no-repeat;
+           }
+           
+           .pic_wrapper {
+               width: 78vw;
+               height: 70vh;
+               top: -1vh;
+               background-image: url(../img/yo.png);
+               background-size: 100%;
+               background-repeat: no-repeat;
+               position: absolute;
+               max-width: 408px;
+           }
+           /* ------------------------------ */
+           /* Blog */
+           
+           .container_Blog {
+               width: 100%;
+               height: 100%;
+               position: relative;
+               background-image: linear-gradient(-90deg, rgb(182, 239, 203, 1), rgb(176, 224, 232, 1));
+               border-radius: 20px;
+           }
+           
+           .content_Blog {
+               color: var(--white-color);
+               margin: 0 auto;
+               display: flex;
+               justify-content: center;
+               font-size: 5rem;
+               text-decoration: underline var(--white-color) solid;
+               position: relative;
+               height: 100px;
+               align-items: center;
+           }
+           
+           .item_Blog {
+               padding-bottom: 54px;
+               margin-bottom: 60px;
+           }
+           
+           .grid_Item {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+           }
+           
+           .item_Slot {
+               display: flex;
+               background-color: var(--white-color);
+               margin-top: 10px;
+               border: 10px;
+               border-radius: 10px;
+               width: 50%;
+           }
+           
+           .image_Item {
+               width: 150px;
+               height: 100px;
+               background-image: url(/resources/img/sanpham.png);
+               background-color: var(--white-color);
+               background-repeat: no-repeat;
+               background-size: 100%;
+               border-radius: 10px 0% 0% 10px
+           }
+           /* cai nay sua tam */
+           
+           .item_Slot h2 {
+               border: 10px;
+               position: relative;
+               top: 15px;
+               left: 10px;
+           }
+           /* Product */
+           
+           .container_Product {
+               width: 100%;
+               margin: 0 auto;
+           }
+           
+           .content_Product {
+               color: var(--text-color-main);
+               margin: 0 auto;
+               display: flex;
+               justify-content: center;
+               font-size: 5rem;
+               text-decoration: underline var(--text-color-main) solid;
+           }
+           
+           .product_slot {
+               margin-top: 5rem;
+               display: grid;
+               grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+               gap: 1.5rem;
+           }
+           
+           .slot {
+               padding: 5rem;
+               text-align: center;
+               /* border: 0.8rem solid rgb(182, 239, 203, 1); */
+               background-color: var(--white-color);
+               box-sizing: border-box;
+               position: relative;
+               border-radius: 20px;
+               background-clip: padding-box;
+           }
+           
+           .slot::before {
+               content: "";
+               position: absolute;
+               inset: 0;
+               z-index: -1;
+               margin: -5px;
+               background-image: linear-gradient(-90deg, rgb(182, 239, 203, 1), rgb(176, 224, 232, 1));
+               border-radius: inherit;
+           }
+           
+           .slot>img {
+               height: 200px;
+               /* border-color: red; */
+               border: 1px solid white;
+               border-radius: 10px
+           }
+           
+           .slot>h3 {
+               font-size: 2rem;
+               padding: 1rem 0;
+           }
+           
+           .price {
+               font-size: 1.4rem;
+               margin: 0.5rem 0;
+           }
+           /* Contact */
+           
+           .content_Contact {
+               color: var(--text-color-main);
+               margin: 0 auto;
+               display: flex;
+               justify-content: center;
+               font-size: 5rem;
+               text-decoration: underline var(--text-color-main) solid;
+               position: relative;
+               height: 100px;
+               align-items: center;
+           }
+           
+           .contactItem {
+               display: flex;
+               justify-content: space-between;
+           }
+           
+           h2 {
+               text-align: center;
+               margin: 10px 0;
+               font-size: 2rem;
+           }
+           
+           .box {
+               width: 48%;
+               background-color: var(--white-color);
+               height: auto;
+           }
+           
+           input[type=text],
+           select,
+           textarea {
+               width: 100%;
+               /* Full width */
+               padding: 12px;
+               /* Some padding */
+               border: 1px solid #ccc;
+               /* Gray border */
+               border-radius: 4px;
+               /* Rounded borders */
+               box-sizing: border-box;
+               /* Make sure that padding and width stays in place */
+               margin-top: 6px;
+               /* Add a top margin */
+               margin-bottom: 16px;
+               /* Bottom margin */
+               resize: vertical
+               /* Allow the user to vertically resize the textarea (not horizontally) */
+           }
+           
+           input[type=submit] {
+               background-color: var(--text-color-main);
+               color: white;
+               padding: 12px 20px;
+               border: none;
+               border-radius: 4px;
+               cursor: pointer;
+           }
+           
+           input[type=submit] :hover {
+               background-color: black;
+           }
+           
+           label {
+               font-size: 1.6rem
+           }
+           /* Footer */
+           
+           footer {
+               background-color: var(--text-color-main);
+           }
+           
+           .footer-nav {
+               background-color: var(--text-color-main);
+           }
+           
+           .copy_writer {
+               display: flex;
+               justify-content: space-between;
+           }
+           
+           .copy_writer_item {
+               display: flex;
+               margin: 0.4rem;
+               font-size: 1rem;
+               color: var(--white-color);
+               flex-direction: column;
+               justify-content: space-between;
+           }
+           
+           .itemfooter {
+               display: flex;
+               justify-content: space-between;
+           }
+           
+           .itemfooter_slot {
+               padding: 1rem;
+               font-size: 3rem;
+               border-radius: 15px;
+           }
+           
+           .itemfooter_slot:hover {
+               color: var(--text-color-main);
+               background-color: var(--white-color);
+           }
+           
+           .container_Blog,
+           .container_Contact,
+           .container_Home,
+           .container_Product {
+               padding: 0 0.5rem;
+           }
