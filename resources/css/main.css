@@ -174,7 +174,7 @@ a.nav-link:hover {
 .image_Item {
     width: 150px;
     height: 100px;
-    background-image: url(../resources/img/sanpham.png);
+    background-image: url(../img/sanpham.png);
     background-color: var(--white-color);
     background-repeat: no-repeat;
     background-size: 100%;
